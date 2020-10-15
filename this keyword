@@ -1,0 +1,24 @@
+class ThisDemo
+{
+    int num1;
+    int num2;
+    
+    public ThisDemo(int num1,int num2)
+    {
+        this.num1 = num1;    //this.localObject = globalObject; 
+        this.num2 = num2;
+     }
+     
+}
+
+public class Solution 
+{
+    public static void main(String args[])
+    {
+        ThisDemo obj = new ThisDemo(3,5);    //Constructor
+        
+        System.out.println(obj.num1);
+        System.out.println(obj.num2);
+        
+      }
+}     
